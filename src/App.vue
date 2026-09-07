@@ -1,8 +1,15 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
-import RandomName from './components/RandomName.vue'
+import RandomName from "./components/RandomName.vue";
 </script>
 
 <template>
-  <RandomName />
+
+  <div>
+    <RandomName />
+  </div>
 </template>
+
+<style scoped>
+
+</style>
