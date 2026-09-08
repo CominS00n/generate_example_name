@@ -39,7 +39,7 @@ const generateNameThAndEn = () => {
   };
 };
 const generateEmail = () => {
-  return `${generateNameThAndEn().nameEn.toLowerCase().replace(" ", ".")}@yopmail.com`;
+  return `${generateNameThAndEn().nameEn.toLowerCase().replace(" ", ".")}${settings.value.domain}`;
 };
 const generateNickname = () => {
   return {
