@@ -34,12 +34,12 @@ const nicknameRandom = ref(0);
 
 const generateNameThAndEn = () => {
   return {
-    nameTh: `${firstName.names[firstNameRandom.value].name} ${lastName.last_names[lastNameRandom.value].last_name_th}`,
+    nameTh: `${firstName.names[firstNameRandom.value].name} ${lastName.last_names[lastNameRandom.value].last_name}`,
     nameEn: `${firstName.names[firstNameRandom.value].name_en} ${lastName.last_names[lastNameRandom.value].last_name_en}`,
   };
 };
 const generateEmail = () => {
-  return `${generateNameThAndEn().nameEn.toLowerCase().replace(" ", ".")}${settings.value.domain}`;
+  return `${generateNameThAndEn().nameEn.toLowerCase().replace(" ", ".")}@${settings.value.domain}`;
 };
 const generateNickname = () => {
   return {

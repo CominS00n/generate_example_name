@@ -1,448 +1,200 @@
 {
   "Nicknames": [
-    {
-      "nickname": "ชาย",
-      "nickname_en": "Chai"
-    },
-    {
-      "nickname": "วิภา",
-      "nickname_en": "Wipa"
-    },
-    {
-      "nickname": "นนท์",
-      "nickname_en": "Non"
-    },
-    {
-      "nickname": "ลิสา",
-      "nickname_en": "Lisa"
-    },
-    {
-      "nickname": "ปิติ",
-      "nickname_en": "Piti"
-    },
-    {
-      "nickname": "มาลี",
-      "nickname_en": "Malee"
-    },
-    {
-      "nickname": "กิต",
-      "nickname_en": "Kit"
-    },
-    {
-      "nickname": "นารี",
-      "nickname_en": "Naree"
-    },
-    {
-      "nickname": "ธี",
-      "nickname_en": "Thee"
-    },
-    {
-      "nickname": "ศศิ",
-      "nickname_en": "Sasi"
-    },
-    {
-      "nickname": "นนท์",
-      "nickname_en": "Non"
-    },
-    {
-      "nickname": "ริน",
-      "nickname_en": "Rin"
-    },
-    {
-      "nickname": "ชัย",
-      "nickname_en": "Chai"
-    },
-    {
-      "nickname": "ปรี",
-      "nickname_en": "Pree"
-    },
-    {
-      "nickname": "วีร",
-      "nickname_en": "Veer"
-    },
-    {
-      "nickname": "กัญญา",
-      "nickname_en": "Kanya"
-    },
-    {
-      "nickname": "เอก",
-      "nickname_en": "Ek"
-    },
-    {
-      "nickname": "ชลิต",
-      "nickname_en": "Chalit"
-    },
-    {
-      "nickname": "ภานุ",
-      "nickname_en": "Panu"
-    },
-    {
-      "nickname": "อภิ",
-      "nickname_en": "Api"
-    },
-    {
-      "nickname": "กฤต",
-      "nickname_en": "Krit"
-    },
-    {
-      "nickname": "ธีร",
-      "nickname_en": "Theer"
-    },
-    {
-      "nickname": "วุฒิ",
-      "nickname_en": "Wut"
-    },
-    {
-      "nickname": "เอก",
-      "nickname_en": "Ek"
-    },
-    {
-      "nickname": "ชย",
-      "nickname_en": "Chay"
-    },
-    {
-      "nickname": "เมธ",
-      "nickname_en": "Met"
-    },
-    {
-      "nickname": "ก้อง",
-      "nickname_en": "Kong"
-    },
-    {
-      "nickname": "โชค",
-      "nickname_en": "Chok"
-    },
-    {
-      "nickname": "จบ",
-      "nickname_en": "Job"
-    },
-    {
-      "nickname": "ทศ",
-      "nickname_en": "Tops"
-    },
-    {
-      "nickname": "พล",
-      "nickname_en": "Pol"
-    },
-    {
-      "nickname": "ธน",
-      "nickname_en": "Thon"
-    },
-    {
-      "nickname": "อร",
-      "nickname_en": "Or"
-    },
-    {
-      "nickname": "พงษ์",
-      "nickname_en": "Pong"
-    },
-    {
-      "nickname": "อภิ",
-      "nickname_en": "Api"
-    },
-    {
-      "nickname": "ศิริ",
-      "nickname_en": "Siri"
-    },
-    {
-      "nickname": "ดา",
-      "nickname_en": "Da"
-    },
-    {
-      "nickname": "อภิ",
-      "nickname_en": "Api"
-    },
-    {
-      "nickname": "จารุ",
-      "nickname_en": "Jaru"
-    },
-    {
-      "nickname": "กมล",
-      "nickname_en": "Kamol"
-    },
-    {
-      "nickname": "พรรณ",
-      "nickname_en": "Pan"
-    },
-    {
-      "nickname": "อัญ",
-      "nickname_en": "An"
-    },
-    {
-      "nickname": "ปภา",
-      "nickname_en": "Papa"
-    },
-    {
-      "nickname": "ทิด",
-      "nickname_en": "Tid"
-    },
-    {
-      "nickname": "นัท",
-      "nickname_en": "Nut"
-    },
-    {
-      "nickname": "ปิ่น",
-      "nickname_en": "Pin"
-    },
-    {
-      "nickname": "กฤ",
-      "nickname_en": "Kru"
-    },
-    {
-      "nickname": "อธิ",
-      "nickname_en": "Ath"
-    },
-    {
-      "nickname": "ชวิน",
-      "nickname_en": "Chawin"
-    },
-    {
-      "nickname": "อภิ",
-      "nickname_en": "Api"
-    },
-    {
-      "nickname": "วร",
-      "nickname_en": "Wor"
-    },
-    {
-      "nickname": "อนันต์",
-      "nickname_en": "Anan"
-    },
-    {
-      "nickname": "ศิริพร",
-      "nickname_en": "Siriporn"
-    },
-    {
-      "nickname": "อรรถ",
-      "nickname_en": "Arth"
-    },
-    {
-      "nickname": "ทศพล",
-      "nickname_en": "Topsapol"
-    },
-    {
-      "nickname": "กมล",
-      "nickname_en": "Kamol"
-    },
-    {
-      "nickname": "บุษ",
-      "nickname_en": "Bus"
-    },
-    {
-      "nickname": "นิต",
-      "nickname_en": "Nit"
-    },
-    {
-      "nickname": "จารุ",
-      "nickname_en": "Jaru"
-    },
-    {
-      "nickname": "พรรณ",
-      "nickname_en": "Pan"
-    },
-    {
-      "nickname": "อัญ",
-      "nickname_en": "An"
-    },
-    {
-      "nickname": "ปภา",
-      "nickname_en": "Papa"
-    },
-    {
-      "nickname": "ทิด",
-      "nickname_en": "Tid"
-    },
-    {
-      "nickname": "นัท",
-      "nickname_en": "Nut"
-    },
-    {
-      "nickname": "ปิ่น",
-      "nickname_en": "Pin"
-    },
-    {
-      "nickname": "กฤ",
-      "nickname_en": "Kru"
-    },
-    {
-      "nickname": "อธิ",
-      "nickname_en": "Ath"
-    },
-    {
-      "nickname": "ชวิน",
-      "nickname_en": "Chawin"
-    },
-    {
-      "nickname": "วี",
-      "nickname_en": "Vee"
-    },
-    {
-      "nickname": "ปภาวดี",
-      "nickname_en": "Papawadee"
-    },
-    {
-      "nickname": "มณี",
-      "nickname_en": "Manee"
-    },
-    {
-      "nickname": "ศศิ",
-      "nickname_en": "Sasi"
-    },
-    {
-      "nickname": "กมล",
-      "nickname_en": "Kamol"
-    },
-    {
-      "nickname": "บุษบา",
-      "nickname_en": "Busaba"
-    },
-    {
-      "nickname": "นิต",
-      "nickname_en": "Nit"
-    },
-    {
-      "nickname": "จารุวรรณ",
-      "nickname_en": "Jarunwan"
-    },
-    {
-      "nickname": "อรุณ",
-      "nickname_en": "Arun"
-    },
-    {
-      "nickname": "กานต์",
-      "nickname_en": "Kan"
-    },
-    {
-      "nickname": "วรัญญา",
-      "nickname_en": "Waranya"
-    },
-    {
-      "nickname": "อภิรักษ์",
-      "nickname_en": "Apirak"
-    },
-    {
-      "nickname": "ภูผา",
-      "nickname_en": "Phupa"
-    },
-    {
-      "nickname": "ไพโรจน์",
-      "nickname_en": "Pairoj"
-    },
-    {
-      "nickname": "มณี",
-      "nickname_en": "Manee"
-    },
-    {
-      "nickname": "พงษ์",
-      "nickname_en": "Pong"
-    },
-    {
-      "nickname": "ธิดา",
-      "nickname_en": "Tida"
-    },
-    {
-      "nickname": "อัญชลี",
-      "nickname_en": "Anchalee"
-    },
-    {
-      "nickname": "นัท",
-      "nickname_en": "Nut"
-    },
-    {
-      "nickname": "ปิ่น",
-      "nickname_en": "Pin"
-    },
-    {
-      "nickname": "กฤ",
-      "nickname_en": "Kru"
-    },
-    {
-      "nickname": "อธิ",
-      "nickname_en": "Ath"
-    },
-    {
-      "nickname": "ชวิน",
-      "nickname_en": "Chawin"
-    },
-    {
-      "nickname": "วร",
-      "nickname_en": "Wor"
-    },
-    {
-      "nickname": "นภา",
-      "nickname_en": "Napa"
-    },
-    {
-      "nickname": "ปภา",
-      "nickname_en": "Papa"
-    },
-    {
-      "nickname": "มณี",
-      "nickname_en": "Manee"
-    },
-    {
-      "nickname": "ศศิ",
-      "nickname_en": "Sasi"
-    },
-    {
-      "nickname": "กมล",
-      "nickname_en": "Kamol"
-    },
-    {
-      "nickname": "บุษบา",
-      "nickname_en": "Busaba"
-    },
-    {
-      "nickname": "นิต",
-      "nickname_en": "Nit"
-    },
-    {
-      "nickname": "จารุ",
-      "nickname_en": "Jaru"
-    },
-    {
-      "nickname": "พรรณ",
-      "nickname_en": "Pan"
-    },
-    {
-      "nickname": "อัญ",
-      "nickname_en": "An"
-    },
-    {
-      "nickname": "ปภา",
-      "nickname_en": "Papa"
-    },
-    {
-      "nickname": "ทิด",
-      "nickname_en": "Tid"
-    },
-    {
-      "nickname": "นัท",
-      "nickname_en": "Nut"
-    },
-    {
-      "nickname": "ปิ่น",
-      "nickname_en": "Pin"
-    },
-    {
-      "nickname": "กฤ",
-      "nickname_en": "Kru"
-    },
-    {
-      "nickname": "อธิ",
-      "nickname_en": "Ath"
-    },
-    {
-      "nickname": "ชวิน",
-      "nickname_en": "Chawin"
-    },
-    {
-      "nickname": "วร",
-      "nickname_en": "Wor"
-    },
-    {
-      "nickname": "อนันต์",
-      "nickname_en": "Anan"
-    }
+    { "nickname": "ต้น", "nickname_en": "Ton", "gender": "male" },
+    { "nickname": "แต้ว", "nickname_en": "Taew", "gender": "female" },
+    { "nickname": "แบงค์", "nickname_en": "Bank", "gender": "male" },
+    { "nickname": "มายด์", "nickname_en": "Mind", "gender": "female" },
+    { "nickname": "กันต์", "nickname_en": "Gun", "gender": "male" },
+    { "nickname": "ฟ้า", "nickname_en": "Fah", "gender": "female" },
+    { "nickname": "นนท์", "nickname_en": "Non", "gender": "male" },
+    { "nickname": "พิม", "nickname_en": "Pim", "gender": "female" },
+    { "nickname": "นัท", "nickname_en": "Nut", "gender": "male" },
+    { "nickname": "แพร", "nickname_en": "Prae", "gender": "female" },
+    { "nickname": "กร", "nickname_en": "Korn", "gender": "male" },
+    { "nickname": "ก้อย", "nickname_en": "Koy", "gender": "female" },
+    { "nickname": "ภูมิ", "nickname_en": "Pooh", "gender": "male" },
+    { "nickname": "ฝน", "nickname_en": "Fon", "gender": "female" },
+    { "nickname": "ท็อป", "nickname_en": "Top", "gender": "male" },
+    { "nickname": "มิ้นท์", "nickname_en": "Mint", "gender": "female" },
+    { "nickname": "เจมส์", "nickname_en": "James", "gender": "male" },
+    { "nickname": "บี", "nickname_en": "Bee", "gender": "female" },
+    { "nickname": "ป๊อป", "nickname_en": "Pop", "gender": "male" },
+    { "nickname": "เบลล์", "nickname_en": "Belle", "gender": "female" },
+    { "nickname": "พีช", "nickname_en": "Peach", "gender": "male" },
+    { "nickname": "ออม", "nickname_en": "Aom", "gender": "female" },
+    { "nickname": "กอล์ฟ", "nickname_en": "Golf", "gender": "male" },
+    { "nickname": "โบว์", "nickname_en": "Bow", "gender": "female" },
+    { "nickname": "วิน", "nickname_en": "Win", "gender": "male" },
+    { "nickname": "กุ๊ก", "nickname_en": "Kook", "gender": "female" },
+    { "nickname": "เต้", "nickname_en": "Tae", "gender": "male" },
+    { "nickname": "กวาง", "nickname_en": "Kwang", "gender": "female" },
+    { "nickname": "พี", "nickname_en": "Pee", "gender": "male" },
+    { "nickname": "มิน", "nickname_en": "Min", "gender": "female" },
+    { "nickname": "บอย", "nickname_en": "Boy", "gender": "male" },
+    { "nickname": "เกด", "nickname_en": "Kate", "gender": "female" },
+    { "nickname": "แทน", "nickname_en": "Tan", "gender": "male" },
+    { "nickname": "ขนุน", "nickname_en": "Khanun", "gender": "female" },
+    { "nickname": "ฟลุ๊ค", "nickname_en": "Fluke", "gender": "male" },
+    { "nickname": "ไข่มุก", "nickname_en": "Khaimuk", "gender": "female" },
+    { "nickname": "เบส", "nickname_en": "Best", "gender": "male" },
+    { "nickname": "ครีม", "nickname_en": "Cream", "gender": "female" },
+    { "nickname": "ไบร์ท", "nickname_en": "Bright", "gender": "male" },
+    { "nickname": "จ๋า", "nickname_en": "Ja", "gender": "female" },
+    { "nickname": "ไนท์", "nickname_en": "Night", "gender": "male" },
+    { "nickname": "จอย", "nickname_en": "Joy", "gender": "female" },
+    { "nickname": "มาร์ค", "nickname_en": "Mark", "gender": "male" },
+    { "nickname": "จิ๊บ", "nickname_en": "Jip", "gender": "female" },
+    { "nickname": "เบิร์ด", "nickname_en": "Bird", "gender": "male" },
+    { "nickname": "จูน", "nickname_en": "June", "gender": "female" },
+    { "nickname": "โบ๊ท", "nickname_en": "Boat", "gender": "male" },
+    { "nickname": "แจง", "nickname_en": "Jang", "gender": "female" },
+    { "nickname": "เติ้ล", "nickname_en": "Tle", "gender": "male" },
+    { "nickname": "เจี๊ยบ", "nickname_en": "Jeab", "gender": "female" },
+    { "nickname": "เคน", "nickname_en": "Ken", "gender": "male" },
+    { "nickname": "ชมพู่", "nickname_en": "Chomphu", "gender": "female" },
+    { "nickname": "ปอนด์", "nickname_en": "Pond", "gender": "male" },
+    { "nickname": "ปิ่น", "nickname_en": "Pin", "gender": "female" },
+    { "nickname": "ดิว", "nickname_en": "Dew", "gender": "male" },
+    { "nickname": "ซิน", "nickname_en": "Xin", "gender": "female" },
+    { "nickname": "ตั้ม", "nickname_en": "Tum", "gender": "male" },
+    { "nickname": "ดาว", "nickname_en": "Dao", "gender": "female" },
+    { "nickname": "เต๋า", "nickname_en": "Tao", "gender": "male" },
+    { "nickname": "เดียร์", "nickname_en": "Dear", "gender": "female" },
+    { "nickname": "บูม", "nickname_en": "Boom", "gender": "male" },
+    { "nickname": "นิว", "nickname_en": "New", "gender": "female" },
+    { "nickname": "ปูน", "nickname_en": "Poon", "gender": "male" },
+    { "nickname": "น้ำ", "nickname_en": "Nam", "gender": "female" },
+    { "nickname": "ไทด์", "nickname_en": "Tide", "gender": "male" },
+    { "nickname": "เนย", "nickname_en": "Noey", "gender": "female" },
+    { "nickname": "ธันวา", "nickname_en": "Thanwa", "gender": "male" },
+    { "nickname": "ใบเตย", "nickname_en": "Baitoey", "gender": "female" },
+    { "nickname": "เต็นท์", "nickname_en": "Tent", "gender": "male" },
+    { "nickname": "นิหน่า", "nickname_en": "Ninah", "gender": "female" },
+    { "nickname": "โน้ต", "nickname_en": "Note", "gender": "male" },
+    { "nickname": "แยม", "nickname_en": "Yam", "gender": "female" },
+    { "nickname": "บีม", "nickname_en": "Beam", "gender": "male" },
+    { "nickname": "ใบเฟิร์น", "nickname_en": "Baifern", "gender": "female" },
+    { "nickname": "ปั้น", "nickname_en": "Pan", "gender": "male" },
+    { "nickname": "ปลา", "nickname_en": "Pla", "gender": "female" },
+    { "nickname": "เป้", "nickname_en": "Pae", "gender": "male" },
+    { "nickname": "ปริม", "nickname_en": "Prim", "gender": "female" },
+    { "nickname": "โปร", "nickname_en": "Pro", "gender": "male" },
+    { "nickname": "ปุย", "nickname_en": "Pui", "gender": "female" },
+    { "nickname": "พงษ์", "nickname_en": "Phong", "gender": "male" },
+    { "nickname": "ผึ้ง", "nickname_en": "Phueng", "gender": "female" },
+    { "nickname": "มิกซ์", "nickname_en": "Mix", "gender": "male" },
+    { "nickname": "แพรวา", "nickname_en": "Praewa", "gender": "female" },
+    { "nickname": "เมฆ", "nickname_en": "Mek", "gender": "male" },
+    { "nickname": "มุก", "nickname_en": "Mook", "gender": "female" },
+    { "nickname": "ยู", "nickname_en": "Yu", "gender": "male" },
+    { "nickname": "เมย์", "nickname_en": "May", "gender": "female" },
+    { "nickname": "เรย์", "nickname_en": "Ray", "gender": "male" },
+    { "nickname": "โม", "nickname_en": "Mo", "gender": "female" },
+    { "nickname": "รัฐ", "nickname_en": "Rat", "gender": "male" },
+    { "nickname": "มิ้ม", "nickname_en": "Mim", "gender": "female" },
+    { "nickname": "ว่าน", "nickname_en": "Wan", "gender": "male" },
+    { "nickname": "วิว", "nickname_en": "View", "gender": "female" },
+    { "nickname": "สกาย", "nickname_en": "Sky", "gender": "male" },
+    { "nickname": "ส้ม", "nickname_en": "Som", "gender": "female" },
+    { "nickname": "โส", "nickname_en": "So", "gender": "male" },
+    { "nickname": "ศศิ", "nickname_en": "Sasi", "gender": "female" },
+    { "nickname": "ฮัท", "nickname_en": "Hut", "gender": "male" },
+    { "nickname": "อาย", "nickname_en": "Eye", "gender": "female" },
+    { "nickname": "อาท", "nickname_en": "Art", "gender": "male" },
+    { "nickname": "แอม", "nickname_en": "Am", "gender": "female" },
+    { "nickname": "โอ๊ต", "nickname_en": "Oat", "gender": "male" },
+    { "nickname": "หมิว", "nickname_en": "Mew", "gender": "female" },
+    { "nickname": "คิว", "nickname_en": "Q", "gender": "male" },
+    { "nickname": "แอน", "nickname_en": "Ann", "gender": "female" },
+    { "nickname": "จี", "nickname_en": "G", "gender": "male" },
+    { "nickname": "เชน", "nickname_en": "Shane", "gender": "male" },
+    { "nickname": "โดม", "nickname_en": "Dome", "gender": "male" },
+    { "nickname": "ดีเจ", "nickname_en": "DJ", "gender": "male" },
+    { "nickname": "แม็ค", "nickname_en": "Mac", "gender": "male" },
+    { "nickname": "ก้อง", "nickname_en": "Kong", "gender": "male" },
+    { "nickname": "พายุ", "nickname_en": "Payu", "gender": "male" },
+    { "nickname": "ตะวัน", "nickname_en": "Tawan", "gender": "male" },
+    { "nickname": "เหนือ", "nickname_en": "Nuea", "gender": "male" },
+    { "nickname": "ทะเล", "nickname_en": "Talay", "gender": "male" },
+    { "nickname": "พอร์ช", "nickname_en": "Porsche", "gender": "male" },
+    { "nickname": "มีน", "nickname_en": "Mean", "gender": "female" },
+    { "nickname": "แนน", "nickname_en": "Nan", "gender": "female" },
+    { "nickname": "ปุ๊ก", "nickname_en": "Pook", "gender": "female" },
+    { "nickname": "ผักบุ้ง", "nickname_en": "Phakbung", "gender": "female" },
+    { "nickname": "พริก", "nickname_en": "Phrik", "gender": "female" },
+    { "nickname": "พลอย", "nickname_en": "Ploy", "gender": "female" },
+    { "nickname": "มด", "nickname_en": "Mod", "gender": "female" },
+    { "nickname": "เมเปิ้ล", "nickname_en": "Maple", "gender": "female" },
+    { "nickname": "ยี่หวา", "nickname_en": "Yihwa", "gender": "female" },
+    { "nickname": "รุ้ง", "nickname_en": "Rung", "gender": "female" },
+    { "nickname": "วันใหม่", "nickname_en": "Wanmai", "gender": "female" },
+    { "nickname": "สลิล", "nickname_en": "Salin", "gender": "female" },
+    { "nickname": "อลิส", "nickname_en": "Alice", "gender": "female" },
+    { "nickname": "อัญชัน", "nickname_en": "Anchan", "gender": "female" },
+    { "nickname": "เกล้า", "nickname_en": "Klao", "gender": "female" },
+    { "nickname": "แก้ม", "nickname_en": "Kaem", "gender": "female" },
+    { "nickname": "ญาญ่า", "nickname_en": "Yaya", "gender": "female" },
+    { "nickname": "ดรีม", "nickname_en": "Dream", "gender": "female" },
+    { "nickname": "ตอง", "nickname_en": "Tong", "gender": "female" },
+    { "nickname": "ทับทิม", "nickname_en": "Thapthim", "gender": "female" },
+    { "nickname": "บัว", "nickname_en": "Bua", "gender": "female" },
+    { "nickname": "ปาล์ม", "nickname_en": "Palm", "gender": "female" },
+    { "nickname": "พาย", "nickname_en": "Pie", "gender": "female" },
+    { "nickname": "เพชร", "nickname_en": "Phet", "gender": "female" },
+    { "nickname": "ฟาง", "nickname_en": "Fang", "gender": "female" },
+    { "nickname": "มิลค์", "nickname_en": "Milk", "gender": "female" },
+    { "nickname": "ไกด์", "nickname_en": "Guide", "gender": "male" },
+    { "nickname": "ขุนพล", "nickname_en": "Khunphon", "gender": "male" },
+    { "nickname": "จั๊บ", "nickname_en": "Jap", "gender": "male" },
+    { "nickname": "เตอร์", "nickname_en": "Ter", "gender": "male" },
+    { "nickname": "ป้อง", "nickname_en": "Pong", "gender": "male" },
+    { "nickname": "ยุทธ", "nickname_en": "Yut", "gender": "male" },
+    { "nickname": "รบ", "nickname_en": "Rob", "gender": "male" },
+    { "nickname": "วิล", "nickname_en": "Will", "gender": "male" },
+    { "nickname": "ศิลา", "nickname_en": "Sila", "gender": "male" },
+    { "nickname": "สิงห์", "nickname_en": "Sing", "gender": "male" },
+    { "nickname": "เสือ", "nickname_en": "Suea", "gender": "male" },
+    { "nickname": "องศา", "nickname_en": "Ongsa", "gender": "male" },
+    { "nickname": "เทียน", "nickname_en": "Thian", "gender": "male" },
+    { "nickname": "เซน", "nickname_en": "Zen", "gender": "male" },
+    { "nickname": "ปัน", "nickname_en": "Pan", "gender": "male" },
+    { "nickname": "ภูดิศ", "nickname_en": "Phudis", "gender": "male" },
+    { "nickname": "อาร์ม", "nickname_en": "Arm", "gender": "male" },
+    { "nickname": "เจตน์", "nickname_en": "Jet", "gender": "male" },
+    { "nickname": "กริช", "nickname_en": "Krit", "gender": "male" },
+    { "nickname": "โอม", "nickname_en": "Om", "gender": "male" },
+    { "nickname": "คิม", "nickname_en": "Kim", "gender": "male" },
+    { "nickname": "แทนคุณ", "nickname_en": "Thankhun", "gender": "male" },
+    { "nickname": "สิงโต", "nickname_en": "Singto", "gender": "male" },
+    { "nickname": "ฮาร์ท", "nickname_en": "Heart", "gender": "male" },
+    { "nickname": "ฮีโร่", "nickname_en": "Hero", "gender": "male" },
+    { "nickname": "ภู", "nickname_en": "Phu", "gender": "male" },
+    { "nickname": "ธน", "nickname_en": "Thana", "gender": "male" },
+    { "nickname": "ดุล", "nickname_en": "Dun", "gender": "male" },
+    { "nickname": "พชร", "nickname_en": "Phachara", "gender": "male" },
+    { "nickname": "กวิน", "nickname_en": "Kawin", "gender": "male" },
+    { "nickname": "ศุภกฤต", "nickname_en": "Suphakrit", "gender": "male" },
+    { "nickname": "ณัฐ", "nickname_en": "Nat", "gender": "male" },
+    { "nickname": "กรวีร์", "nickname_en": "Korawee", "gender": "male" },
+    { "nickname": "จิร", "nickname_en": "Jira", "gender": "male" },
+    { "nickname": "กานต์", "nickname_en": "Kant", "gender": "male" },
+    { "nickname": "แพรต", "nickname_en": "Prat", "gender": "female" },
+    { "nickname": "ซัน", "nickname_en": "Sun", "gender": "male" },
+    { "nickname": "ปาล์มมี่", "nickname_en": "Palmy", "gender": "female" },
+    { "nickname": "จูเนียร์", "nickname_en": "Junior", "gender": "male" },
+    { "nickname": "ฟิล์ม", "nickname_en": "Film", "gender": "female" },
+    { "nickname": "เก้า", "nickname_en": "Gao", "gender": "male" },
+    { "nickname": "ไผ่", "nickname_en": "Phai", "gender": "male" },
+    { "nickname": "พราว", "nickname_en": "Phrao", "gender": "female" },
+    { "nickname": "ไนซ์", "nickname_en": "Nice", "gender": "female" },
+    { "nickname": "กอหญ้า", "nickname_en": "Kohya", "gender": "female" },
+    { "nickname": "แชมป์", "nickname_en": "Champ", "gender": "male" },
+    { "nickname": "แมน", "nickname_en": "Man", "gender": "male" },
+    { "nickname": "จิ๋ว", "nickname_en": "Jiu", "gender": "female" },
+    { "nickname": "แอนฟิลด์", "nickname_en": "Anfield", "gender": "male" },
+    { "nickname": "ปอ", "nickname_en": "Por", "gender": "male" },
+    { "nickname": "สปาย", "nickname_en": "Spy", "gender": "female" },
+    { "nickname": "บาส", "nickname_en": "Bas", "gender": "male" },
+    { "nickname": "พริกไทย", "nickname_en": "Phrikthai", "gender": "female" }
   ]
 }
