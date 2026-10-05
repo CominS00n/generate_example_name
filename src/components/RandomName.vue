@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 import firstName from "../assets/example_name/first_name.json";
 import lastName from "../assets/example_name/last_name.json";
@@ -78,6 +78,10 @@ const generateName = () => {
     });
   }
 };
+
+onMounted(() => {
+  generateName();
+});
 </script>
 
 <template>
