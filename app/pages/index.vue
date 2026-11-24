@@ -18,7 +18,7 @@
 import type { NameResult, NameSettings } from "~/utils/randomNames";
 
 const names = shallowRef<NameResult[]>([]);
-const settings = shallowRef<NameSettings>();
+const settings = shallowRef<NameSettings>(DEFAULT_NAME_SETTINGS);
 
 function generate(next: NameSettings) {
   settings.value = next;
