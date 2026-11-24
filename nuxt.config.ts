@@ -19,10 +19,8 @@ export default defineNuxtConfig({
 
   eslint: {
     config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
+      // ใช้คู่กับ @antfu/eslint-config ใน eslint.config.mjs
+      standalone: false
     }
   }
 })
