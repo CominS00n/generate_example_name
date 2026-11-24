@@ -67,6 +67,25 @@
       label="แสดงชื่อเล่น"
       :ui="{ root: 'flex-row-reverse justify-between' }"
     />
+    <USwitch
+      v-model="settings.showEmail"
+      class="w-full"
+      size="lg"
+      label="แสดง Email"
+      :ui="{ root: 'flex-row-reverse justify-between' }"
+    />
+    <UFormField
+      v-if="settings.showEmail"
+      label="โดเมนเมล"
+    >
+      <UInput
+        v-model="settings.mailDomain"
+        leading-icon="i-lucide-at-sign"
+        placeholder="yopmail.com"
+        size="md"
+        class="w-full"
+      />
+    </UFormField>
     <template #footer>
       <UButton
         icon="i-lucide-shuffle"
@@ -99,11 +118,8 @@ const items: RadioGroupItem[] = [
 ];
 
 const settings = reactive<NameSettings>({
-  languages: { th: true, en: true },
-  gender: "all",
-  count: 1,
-  showLastName: true,
-  showNickname: true,
+  ...DEFAULT_NAME_SETTINGS,
+  languages: { ...DEFAULT_NAME_SETTINGS.languages },
 });
 
 function generate() {

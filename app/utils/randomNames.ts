@@ -12,6 +12,8 @@ export type NameSettings = {
   count: number;
   showLastName: boolean;
   showNickname: boolean;
+  showEmail: boolean;
+  mailDomain: string;
 };
 
 export type NameResult = {
@@ -24,6 +26,16 @@ export type NameResult = {
 type NameEntry = LocalizedName & { gender: Gender };
 
 export const MAX_NAME_COUNT = 50;
+
+export const DEFAULT_NAME_SETTINGS: Readonly<NameSettings> = {
+  languages: { th: true, en: true },
+  gender: "all",
+  count: 1,
+  showLastName: true,
+  showNickname: true,
+  showEmail: true,
+  mailDomain: "yopmail.com",
+};
 
 const firstNames = firstNameData.names as NameEntry[];
 const lastNames = lastNameData.last_names as NameEntry[];
@@ -61,7 +73,10 @@ function toName({ th, en }: NameEntry): LocalizedName {
 }
 
 /** สุ่มรายชื่อจาก app/assets/exampleNames โดยชื่อจริงไม่ซ้ำกันในแต่ละครั้ง และนามสกุล/ชื่อเล่นตรงกับเพศของชื่อจริง */
-export function randomNames({ gender, count }: Pick<NameSettings, "gender" | "count">): NameResult[] {
+export function randomNames({
+  gender,
+  count,
+}: Pick<NameSettings, "gender" | "count">): NameResult[] {
   const pool = gender === "all"
     ? firstNames
     : byGender(firstNames, gender);

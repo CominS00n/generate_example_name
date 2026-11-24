@@ -44,7 +44,7 @@ import type { Language, NameResult, NameSettings } from "~/utils/randomNames";
 
 const props = defineProps<{
   names: NameResult[];
-  settings?: NameSettings;
+  settings: NameSettings;
 }>();
 
 const PAGE_SIZE = 10;
@@ -73,7 +73,7 @@ const UButton = resolveComponent("UButton");
 
 const languages = computed(() =>
   (["th", "en"] as const).filter(
-    lang => props.settings?.languages[lang] ?? true,
+    lang => props.settings.languages[lang],
   ),
 );
 
@@ -90,8 +90,14 @@ function localized(texts: (lang: Language) => string) {
 
 const toast = useToast();
 
-const showLastName = computed(() => props.settings?.showLastName ?? true);
-const showNickname = computed(() => props.settings?.showNickname ?? true);
+const showLastName = computed(() => props.settings.showLastName);
+const showNickname = computed(() => props.settings.showNickname);
+const showEmail = computed(() => props.settings.showEmail);
+
+/** email ใช้ชื่อ-นามสกุลภาษาอังกฤษเสมอ ไม่ขึ้นกับภาษาที่เลือก */
+function email(row: NameResult) {
+  return `${row.firstName.en}.${row.lastName.en}@${props.settings.mailDomain}`;
+}
 
 function fullName(row: NameResult, lang: Language) {
   return showLastName.value
@@ -99,15 +105,17 @@ function fullName(row: NameResult, lang: Language) {
     : row.firstName[lang];
 }
 
-/** ข้อความที่คัดลอก: หนึ่งบรรทัดต่อภาษาที่เลือก เช่น "สมชาย ใจดี (ต้น)" */
+/** ข้อความที่คัดลอก: หนึ่งบรรทัดต่อภาษาที่เลือก เช่น "สมชาย ใจดี (ต้น)" ตามด้วย email (ถ้าเปิดไว้) */
 function copyText(row: NameResult) {
-  return languages.value
-    .map(lang =>
-      showNickname.value
-        ? `${fullName(row, lang)} (${row.nickname[lang]})`
-        : fullName(row, lang),
-    )
-    .join("\n");
+  const lines = languages.value.map(lang =>
+    showNickname.value
+      ? `${fullName(row, lang)} (${row.nickname[lang]})`
+      : fullName(row, lang),
+  );
+  if (showEmail.value) {
+    lines.push(email(row));
+  }
+  return lines.join("\n");
 }
 
 async function copy(row: NameResult) {
@@ -168,6 +176,15 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
                 UUser,
                 localized(lang => row.original.nickname[lang]),
               ),
+          } satisfies TableColumn<NameResult>,
+        ]
+      : []),
+    ...(showEmail.value
+      ? [
+          {
+            id: "email",
+            header: "Email",
+            cell: ({ row }) => email(row.original),
           } satisfies TableColumn<NameResult>,
         ]
       : []),
