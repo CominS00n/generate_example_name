@@ -1,6 +1,6 @@
 <template>
   <UCard
-    class="col-span-2 border border-default rounded-lg flex flex-col lg:h-0 lg:min-h-full"
+    class="col-span-2 rounded-lg flex flex-col lg:h-0 lg:min-h-full"
     :ui="{ body: 'p-0 sm:p-0 flex-1 min-h-0 flex flex-col' }"
   >
     <template #header>
@@ -23,11 +23,12 @@
       class="flex-1 min-h-0 overflow-y-auto"
     />
     <template #footer>
-      <div class="flex justify-end p-4">
+      <div class="flex justify-end">
         <UPagination
           v-model:page="page"
           :items-per-page="PAGE_SIZE"
           :total="names.length"
+          class="h-11"
         />
       </div>
     </template>
@@ -72,7 +73,7 @@ const UButton = resolveComponent("UButton");
 
 const languages = computed(() =>
   (["th", "en"] as const).filter(
-    lang => props.settings?.languages[lang] ?? true,
+    (lang) => props.settings?.languages[lang] ?? true,
   ),
 );
 
@@ -81,9 +82,7 @@ function localized(texts: (lang: Language) => string) {
   const [primary, secondary] = languages.value;
   return {
     name: texts(primary!),
-    description: secondary
-      ? texts(secondary)
-      : undefined,
+    description: secondary ? texts(secondary) : undefined,
   };
 }
 
@@ -101,7 +100,7 @@ function fullName(row: NameResult, lang: Language) {
 /** ข้อความที่คัดลอก: หนึ่งบรรทัดต่อภาษาที่เลือก เช่น "สมชาย ใจดี (ต้น)" */
 function copyText(row: NameResult) {
   return languages.value
-    .map(lang =>
+    .map((lang) =>
       showNickname.value
         ? `${fullName(row, lang)} (${row.nickname[lang]})`
         : fullName(row, lang),
@@ -118,8 +117,7 @@ async function copy(row: NameResult) {
       icon: "i-lucide-check",
       color: "success",
     });
-  }
-  catch {
+  } catch {
     toast.add({
       title: "คัดลอกไม่สำเร็จ",
       description: "เบราว์เซอร์ไม่อนุญาตให้เข้าถึงคลิปบอร์ด",
@@ -134,6 +132,12 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
     {
       id: "order",
       header: "#",
+      meta: {
+        class: {
+          th: "w-[60px]",
+          td: "w-[60px]",
+        },
+      },
       cell: ({ row }) => String(row.index + 1),
     },
     {
@@ -142,7 +146,7 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
       cell: ({ row }) =>
         h(
           UUser,
-          localized(lang => fullName(row.original, lang)),
+          localized((lang) => fullName(row.original, lang)),
         ),
     },
     ...(showNickname.value
@@ -150,10 +154,16 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
           {
             id: "nickname",
             header: "ชื่อเล่น",
+            meta: {
+              class: {
+                th: "w-[120px]",
+                td: "w-[120px]",
+              },
+            },
             cell: ({ row }) =>
               h(
                 UUser,
-                localized(lang => row.original.nickname[lang]),
+                localized((lang) => row.original.nickname[lang]),
               ),
           } satisfies TableColumn<NameResult>,
         ]
@@ -161,27 +171,35 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
     {
       accessorKey: "gender",
       header: "เพศ",
+      meta: {
+        class: {
+          th: "w-[100px]",
+          td: "w-[100px]",
+        },
+      },
       cell: ({ row }) =>
         h(UBadge, {
-          label: row.original.gender === "male"
-            ? "ชาย"
-            : "หญิง",
+          label: row.original.gender === "male" ? "ชาย" : "หญิง",
           variant: "outline",
-          color: row.original.gender === "male"
-            ? "primary"
-            : "error",
+          color: row.original.gender === "male" ? "primary" : "error",
         }),
     },
     {
       id: "actions",
       header: "",
+      meta: {
+        class: {
+          th: "w-px",
+          td: "w-px text-right",
+        },
+      },
       cell: ({ row }) =>
         h(UButton, {
-          "icon": "i-lucide-copy",
-          "variant": "ghost",
-          "color": "neutral",
+          icon: "i-lucide-copy",
+          variant: "ghost",
+          color: "neutral",
           "aria-label": `คัดลอก ${fullName(row.original, languages.value[0]!)}`,
-          "onClick": () => copy(row.original),
+          onClick: () => copy(row.original),
         }),
     },
   ];
