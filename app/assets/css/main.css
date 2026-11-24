@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Public Sans", sans-serif;
+
+  /* Primary "Lagoon" จาก #1597BB (ดู Color palette — Primary #1597BB.pdf) */
+  --color-brand-50: #edfaff;
+  --color-brand-100: #dbf4fd;
+  --color-brand-200: #bbe7f7;
+  --color-brand-300: #8bd3ec;
+  --color-brand-400: #55b7d7;
+  --color-brand-500: #1597bb;
+  --color-brand-600: #0b7f9e;
+  --color-brand-700: #066882;
+  --color-brand-800: #025167;
+  --color-brand-900: #054354;
+  --color-brand-950: #012b38;
+}
+
+/* success/info/warning/error ใช้ค่าตั้งต้นของ Nuxt UI (green/blue/yellow/red-500) อยู่แล้ว */
+:root {
+  --ui-primary: var(--ui-color-primary-600);
+  --ui-text-inverted: var(--color-white);
+}
+
+.dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-text-inverted: var(--ui-color-primary-950);
+  --ui-bg: #0b1120;
+}
