@@ -2,7 +2,10 @@
   <div class="flex min-h-dvh flex-col">
     <UHeader>
       <template #left>
-        <NuxtLink to="/" class="flex items-center gap-2">
+        <NuxtLink
+          to="/"
+          class="flex items-center gap-2"
+        >
           <div
             class="h-7.5 w-7.5 bg-primary rounded-lg flex justify-center items-center"
           >

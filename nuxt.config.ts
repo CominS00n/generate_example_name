@@ -1,26 +1,26 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui'
+    "@nuxt/eslint",
+    "@nuxt/ui",
   ],
 
   devtools: {
-    enabled: true
+    enabled: true,
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
 
   routeRules: {
-    '/': { prerender: true }
+    "/": { prerender: true },
   },
 
-  compatibilityDate: '2026-06-30',
+  compatibilityDate: "2026-06-30",
 
   eslint: {
     config: {
       // ใช้คู่กับ @antfu/eslint-config ใน eslint.config.mjs
-      standalone: false
-    }
-  }
-})
+      standalone: false,
+    },
+  },
+});

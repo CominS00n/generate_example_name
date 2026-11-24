@@ -10,7 +10,9 @@ export default antfu(
         // Vue rules
         "vue/block-order": [
           "error",
-          { order: ["template", "script", "style"] },
+          {
+            order: ["template", "script", "style"],
+          },
         ],
         "vue/multi-word-component-names": "off",
         "vue/no-v-html": "off",
@@ -23,7 +25,12 @@ export default antfu(
         "import/named": "off",
 
         // Allow console in development
-        "no-console": ["warn", { allow: ["warn", "error"] }],
+        "no-console": [
+          "warn",
+          {
+            allow: ["warn", "error"],
+          },
+        ],
         "vue/multiline-html-element-content-newline": [
           "error",
           { allowEmptyLines: true },
@@ -94,7 +101,12 @@ export default antfu(
       semi: true,
     },
     // Ignore Nuxt generated files
-    ignores: [".nuxt", ".output", "dist", "node_modules"],
+    ignores: [
+      ".nuxt",
+      ".output",
+      "dist",
+      "node_modules",
+    ],
   },
   {
     rules: {

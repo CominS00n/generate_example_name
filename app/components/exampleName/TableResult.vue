@@ -72,7 +72,7 @@ const UButton = resolveComponent("UButton");
 
 const languages = computed(() =>
   (["th", "en"] as const).filter(
-    (lang) => props.settings?.languages[lang] ?? true,
+    lang => props.settings?.languages[lang] ?? true,
   ),
 );
 
@@ -81,7 +81,9 @@ function localized(texts: (lang: Language) => string) {
   const [primary, secondary] = languages.value;
   return {
     name: texts(primary!),
-    description: secondary ? texts(secondary) : undefined,
+    description: secondary
+      ? texts(secondary)
+      : undefined,
   };
 }
 
@@ -99,7 +101,7 @@ function fullName(row: NameResult, lang: Language) {
 /** ข้อความที่คัดลอก: หนึ่งบรรทัดต่อภาษาที่เลือก เช่น "สมชาย ใจดี (ต้น)" */
 function copyText(row: NameResult) {
   return languages.value
-    .map((lang) =>
+    .map(lang =>
       showNickname.value
         ? `${fullName(row, lang)} (${row.nickname[lang]})`
         : fullName(row, lang),
@@ -116,7 +118,8 @@ async function copy(row: NameResult) {
       icon: "i-lucide-check",
       color: "success",
     });
-  } catch {
+  }
+  catch {
     toast.add({
       title: "คัดลอกไม่สำเร็จ",
       description: "เบราว์เซอร์ไม่อนุญาตให้เข้าถึงคลิปบอร์ด",
@@ -139,7 +142,7 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
       cell: ({ row }) =>
         h(
           UUser,
-          localized((lang) => fullName(row.original, lang)),
+          localized(lang => fullName(row.original, lang)),
         ),
     },
     ...(showNickname.value
@@ -150,7 +153,7 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
             cell: ({ row }) =>
               h(
                 UUser,
-                localized((lang) => row.original.nickname[lang]),
+                localized(lang => row.original.nickname[lang]),
               ),
           } satisfies TableColumn<NameResult>,
         ]
@@ -160,9 +163,13 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
       header: "เพศ",
       cell: ({ row }) =>
         h(UBadge, {
-          label: row.original.gender === "male" ? "ชาย" : "หญิง",
+          label: row.original.gender === "male"
+            ? "ชาย"
+            : "หญิง",
           variant: "outline",
-          color: row.original.gender === "male" ? "primary" : "error",
+          color: row.original.gender === "male"
+            ? "primary"
+            : "error",
         }),
     },
     {
@@ -170,11 +177,11 @@ const columns = computed<TableColumn<NameResult>[]>(() => {
       header: "",
       cell: ({ row }) =>
         h(UButton, {
-          icon: "i-lucide-copy",
-          variant: "ghost",
-          color: "neutral",
+          "icon": "i-lucide-copy",
+          "variant": "ghost",
+          "color": "neutral",
           "aria-label": `คัดลอก ${fullName(row.original, languages.value[0]!)}`,
-          onClick: () => copy(row.original),
+          "onClick": () => copy(row.original),
         }),
     },
   ];

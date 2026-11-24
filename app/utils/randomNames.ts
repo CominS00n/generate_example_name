@@ -33,8 +33,14 @@ function byGender(entries: NameEntry[], gender: Gender) {
   return entries.filter(entry => entry.gender === gender);
 }
 
-const lastNamesByGender = { male: byGender(lastNames, "male"), female: byGender(lastNames, "female") };
-const nicknamesByGender = { male: byGender(nicknames, "male"), female: byGender(nicknames, "female") };
+const lastNamesByGender = {
+  male: byGender(lastNames, "male"),
+  female: byGender(lastNames, "female"),
+};
+const nicknamesByGender = {
+  male: byGender(nicknames, "male"),
+  female: byGender(nicknames, "female"),
+};
 
 function pick<T>(pool: T[]): T {
   return pool[Math.floor(Math.random() * pool.length)]!;
@@ -56,7 +62,9 @@ function toName({ th, en }: NameEntry): LocalizedName {
 
 /** สุ่มรายชื่อจาก app/assets/exampleNames โดยชื่อจริงไม่ซ้ำกันในแต่ละครั้ง และนามสกุล/ชื่อเล่นตรงกับเพศของชื่อจริง */
 export function randomNames({ gender, count }: Pick<NameSettings, "gender" | "count">): NameResult[] {
-  const pool = gender === "all" ? firstNames : byGender(firstNames, gender);
+  const pool = gender === "all"
+    ? firstNames
+    : byGender(firstNames, gender);
   const total = Math.min(Math.max(Math.trunc(count) || 1, 1), MAX_NAME_COUNT);
 
   return sample(pool, total).map(first => ({

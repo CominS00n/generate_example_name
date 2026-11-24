@@ -24,6 +24,4 @@ function generate(next: NameSettings) {
   settings.value = next;
   names.value = randomNames(next);
 }
-
-
 </script>

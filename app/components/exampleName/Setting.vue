@@ -1,5 +1,8 @@
 <template>
-  <UCard class="h-fit" :ui="{ body: 'space-y-4' }">
+  <UCard
+    class="h-fit"
+    :ui="{ body: 'space-y-4' }"
+  >
     <template #header>
       <span class="font-bold">ตั้งค่า</span>
     </template>
@@ -105,6 +108,9 @@ const settings = reactive<NameSettings>({
 
 function generate() {
   // ส่งสำเนาออกไป เพื่อให้ผลลัพธ์ไม่เปลี่ยนตามเมื่อแก้ตั้งค่าหลังสุ่ม
-  emit("generate", { ...settings, languages: { ...settings.languages } });
+  emit("generate", {
+    ...settings,
+    languages: { ...settings.languages },
+  });
 }
 </script>
