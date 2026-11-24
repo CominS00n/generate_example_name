@@ -2,17 +2,30 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: "Public Sans", sans-serif;
 
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
+  /* Primary "Lagoon" จาก #1597BB (ดู Color palette — Primary #1597BB.pdf) */
+  --color-brand-50: #edfaff;
+  --color-brand-100: #dbf4fd;
+  --color-brand-200: #bbe7f7;
+  --color-brand-300: #8bd3ec;
+  --color-brand-400: #55b7d7;
+  --color-brand-500: #1597bb;
+  --color-brand-600: #0b7f9e;
+  --color-brand-700: #066882;
+  --color-brand-800: #025167;
+  --color-brand-900: #054354;
+  --color-brand-950: #012b38;
+}
+
+/* success/info/warning/error ใช้ค่าตั้งต้นของ Nuxt UI (green/blue/yellow/red-500) อยู่แล้ว */
+:root {
+  --ui-primary: var(--ui-color-primary-600);
+  --ui-text-inverted: var(--color-white);
+}
+
+.dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-text-inverted: var(--ui-color-primary-950);
+  --ui-bg: #0b1120;
 }
