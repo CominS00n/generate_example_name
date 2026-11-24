@@ -1,64 +1,93 @@
-# Nuxt Starter Template
+# ExampleName — สุ่มชื่อตัวอย่าง
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-1597BB?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+เว็บสุ่มชื่อ-นามสกุลและชื่อเล่นภาษาไทย/อังกฤษ สำหรับใช้เป็นข้อมูลตัวอย่างตอนทดสอบระบบหรือทำ mock data
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+## ฟีเจอร์
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png" width="830" height="466">
-  </picture>
-</a>
+- สุ่มได้ครั้งละ 1–50 รายชื่อ ชื่อจริงไม่ซ้ำกันในแต่ละครั้ง
+- เลือกภาษาได้ทั้งไทยและอังกฤษ (ต้องเลือกอย่างน้อย 1 ภาษา)
+- เลือกเพศ: ทั้งหมด / ชาย / หญิง โดยนามสกุลและชื่อเล่นจะตรงกับเพศของชื่อจริง
+- เปิด/ปิดการแสดงนามสกุลและชื่อเล่น
+- ตารางผลลัพธ์แบ่งหน้า หน้าละ 10 รายชื่อ และคัดลอกรายชื่อทีละแถวได้
+- รองรับโหมดสว่างและโหมดมืด
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+## เทคโนโลยี
 
-## Quick Start
+- [Nuxt 4](https://nuxt.com) + [Nuxt UI 4](https://ui.nuxt.com) + Tailwind CSS 4
+- [bun](https://bun.sh) เป็น package manager
+- ESLint: [`@antfu/eslint-config`](https://github.com/antfu/eslint-config) ร่วมกับ [`@nuxt/eslint`](https://eslint.nuxt.com)
+- Deploy บน [Vercel](https://vercel.com)
 
-```bash [Terminal]
-npm create nuxt@latest -- -t ui
-```
+## เริ่มต้นใช้งาน
 
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
-
-## Setup
-
-Make sure to install the dependencies:
+ติดตั้ง dependencies:
 
 ```bash
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+รัน development server ที่ `http://localhost:3000`:
 
 ```bash
 bun run dev
 ```
 
-## Production
+## คำสั่งอื่น ๆ
 
-Build the application for production:
+| คำสั่ง                | ใช้ทำอะไร                                             |
+| ------------------- | ---------------------------------------------------- |
+| `bun run build`     | build สำหรับ production                               |
+| `bun run preview`   | เปิดดูผล build บนเครื่อง                                 |
+| `bun run lint`      | ตรวจโค้ดด้วย ESLint (แก้อัตโนมัติด้วย `bun run lint --fix`) |
+| `bun run typecheck` | ตรวจ type ด้วย `vue-tsc`                              |
 
-```bash
-bun run build
+## โครงสร้างโปรเจกต์
+
+```
+app/
+├── app.config.ts              # สี primary / neutral ของ Nuxt UI
+├── assets/
+│   ├── css/main.css           # ธีมสี brand และตัวแปรสีของ Nuxt UI
+│   └── exampleNames/          # ข้อมูลชื่อ (first_name, last_name, nickname)
+├── components/exampleName/
+│   ├── Setting.vue            # ฟอร์มตั้งค่าและปุ่ม "สุ่มชื่อใหม่"
+│   └── TableResult.vue        # ตารางผลลัพธ์ แบ่งหน้า และปุ่มคัดลอก
+├── layouts/default.vue        # header / footer
+├── pages/index.vue            # รับค่าตั้งค่าจาก Setting แล้วส่งผลลัพธ์ให้ TableResult
+└── utils/randomNames.ts       # logic การสุ่มรายชื่อ
 ```
 
-Locally preview production build:
+## เพิ่มหรือแก้ไขรายชื่อ
 
-```bash
-bun run preview
+แก้ไฟล์ JSON ใน `app/assets/exampleNames/` แต่ละรายการมีรูปแบบเดียวกัน:
+
+```json
+{ "th": "ต้น", "en": "Ton", "gender": "male" }
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+`gender` ต้องเป็น `"male"` หรือ `"female"` เท่านั้น
 
-## Renovate integration
+| ไฟล์               | key ของรายการ |
+| ----------------- | ------------- |
+| `first_name.json` | `names`       |
+| `last_name.json`  | `last_names`  |
+| `nickname.json`   | `nicknames`   |
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+## ธีมสี
+
+สีหลักคือ `brand` (Lagoon, `#1597BB`) ไล่ระดับ 50–950 ประกาศไว้ใน `app/assets/css/main.css`
+
+- ปุ่มหลัก: `brand-600` ในโหมดสว่าง / `brand-400` ในโหมดมืด
+- พื้นหลังโหมดมืด: `#0b1120`
+
+## Deploy
+
+Vercel จะ deploy อัตโนมัติเฉพาะ branch `production` (ตั้งไว้ใน `vercel.json`) ส่วน branch อื่นไม่ deploy
+
+ขั้นตอนทั่วไป: พัฒนาบน `develop` แล้ว merge เข้า `production` เมื่อต้องการปล่อยเวอร์ชันใหม่ และสร้าง tag ตามเวอร์ชัน เช่น `v2.0.0`
+
+## License
+
+[MIT](./LICENSE)
